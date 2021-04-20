@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    overflow: auto;
+}
+.landing-page{
+    height: 100vh;
+    overflow: hidden;
+}
+#floatings{
+    position: absolute;
+    left: 20vw;
+}
+.landing-page p{
+    font-size: 4vh;
+    text-align: justify;
+}
+
+
+.about{
+    background:steelblue;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-height: 100vh;
+    padding: 2em;
+    overflow: hidden;
+}
+.about h1{
+    top: 2em;
+}
+.about p{
+    font-size: 3vh;
+    width: 40vw;
+    margin-left: 2vw;
+}
+.colophon{
+    margin-right: 2vw;
+}

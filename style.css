@@ -8,11 +8,13 @@ body{
 }
 #floatings{
     position: absolute;
-    left: 20vw;
+    left: 5vw;
+    top: 0;
 }
 .landing-page p{
     font-size: 4vh;
     text-align: justify;
+    margin: 0;
 }
 
 

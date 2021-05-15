@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Ortica";
+    src: url("font/Ortica-Light.woff") format("woff"),
+         url("font/Ortica-Light.woff2") format("woff2");
+    font-family: "Apfel Grotezk";
+    src: url("font/ApfelGrotezk-Regular.woff") format("woff");
+}
+
+
+header{
+    font-family: 'Ortica-Light', Ortica;
+    font-weight: lighter;
+}
+header h1{
+    font-family: 'Ortica';
+    font-weight: lighter;
+
+}
+.project-description{
+    font-family: 'Apfel Grotezk';
+}

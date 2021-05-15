@@ -43,18 +43,22 @@ body{
     padding: 2em;
     font-family: 'Apfel Grotezk'; 
 }
+
+.container{
+    padding: 0;
+    margin: 0;
+    border: red 2px solid;
+}
    
-.about h1{
+.container h1{
     top: 0;
     font-family: 'Ortica-Light', Ortica;
     font-weight: lighter;
     font-size: 8vh;
 }
-.about p{
+.container p{
     font-size: 2vh;
     width: 40vw;
-    
-    
 }
 .colophon{
     margin-right: 2vw;

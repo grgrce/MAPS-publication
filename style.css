@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Ortica";
+    src: url("font/Ortica-Light.woff") format("woff"),
+         url("font/Ortica-Light.woff2") format("woff2");
+    font-family: "Apfel Grotezk";
+    src: url("font/ApfelGrotezk-Regular.woff") format("woff");
+  }
+
+
 body{
     margin: 0;
     overflow: auto;
@@ -5,11 +14,16 @@ body{
 .landing-page{
     height: 100vh;
     overflow: hidden;
+    color: rgb(189, 189, 189);
+    font-family: 'Apfel Grotezk';
+    letter-spacing: 2em;
 }
-#floatings{
+.floatings{
     position: absolute;
     left: 5vw;
     top: 0;
+    max-height: 100vh;
+    overflow: hidden;
 }
 .landing-page p{
     font-size: 4vh;
@@ -19,23 +33,36 @@ body{
 
 
 .about{
-    background:steelblue;
+    background:rgb(19, 58, 90);
+    color: rgb(232, 232, 232);
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-    max-height: 100vh;
+    height: 100vh;
     padding: 2em;
-    overflow: hidden;
+    font-family: 'Apfel Grotezk'; 
 }
+   
 .about h1{
-    top: 2em;
+    top: 0;
+    font-family: 'Ortica-Light', Ortica;
+    font-weight: lighter;
+    font-size: 8vh;
 }
 .about p{
-    font-size: 3vh;
+    font-size: 2vh;
     width: 40vw;
-    margin-left: 2vw;
+    
+    
 }
 .colophon{
     margin-right: 2vw;
+}
+
+
+/*projects*/
+
+header{
+    font-family: 'Ortica';
 }

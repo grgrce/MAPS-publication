@@ -15,14 +15,14 @@ body{
 nav{
     background: linear-gradient(
         to bottom,
-        #f0f0f0 6vh, 
+        #f0f0f0 8vh, 
         rgba(240, 240, 240, 0)
      );
     top: 0%;
     display: flex;
     align-items: center;
     justify-content: center;   
-    height: 10vh;
+    height: 12vh;
     width: 100vw;
     position: fixed; 
 }
@@ -30,11 +30,11 @@ nav{
     position: absolute;
     display: block;
     transform: rotate(45deg) scale(var(--ggs,1));
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #293566;
-    left: 16px;
-    right: 16px;
+    left: 24px;
+    right: 12px;
 
 }
 
@@ -42,20 +42,43 @@ nav h3{
     color: #293566;
     font-family: 'Ortica';
     font-weight: lighter;
-    justify-self: center;
-    margin: 0 16px;
+    margin: 0 24px;
 }
 
 header{
-    margin-top: 10vh;
+    margin: 20vh auto;
+    width: 60vw;
+    height: 75vh;
     font-family: 'Ortica-Light', Ortica;
     font-weight: lighter;
 }
+
 header h1{
+    margin-top: 4vh;
     color: #293566;
     font-family: 'Ortica';
     font-weight: bold;
+    font-size: 4.2em;  
+}
+.author{
+    
+}
+.author h3{
+    /*border: 1px solid red;*/
+    color: #707070; 
+    font-family: 'Apfel Grotezk';   
+    font-weight: lighter; 
+    font-size: 1.8em; 
+    line-height: 0.4em;
+}
+a{text-decoration: none;}
+.author a h3:hover{
+    color: #293566;
 }
 .project-description{
+    margin: 25vh auto;
+    width: 50vw;
+    color: #383838;
+    font-size: 1.2em;
     font-family: 'Apfel Grotezk';
 }

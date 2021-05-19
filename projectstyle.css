@@ -48,7 +48,7 @@ nav h3{
 header{
     margin: 20vh auto;
     width: 60vw;
-    height: 75vh;
+    height: 60vh;
     font-family: 'Ortica-Light', Ortica;
     font-weight: lighter;
 }
@@ -76,7 +76,7 @@ a{text-decoration: none;}
     color: #293566;
 }
 .project-description{
-    margin: 25vh auto;
+    margin: 10vh auto;
     width: 50vw;
     color: #383838;
     font-size: 1.2em;

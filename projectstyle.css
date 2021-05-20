@@ -21,21 +21,26 @@ nav{
     top: 0%;
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center; 
+    padding-bottom: 24px;  
     height: 12vh;
     width: 100vw;
     position: fixed; 
 }
 .nav_home{
     position: absolute;
-    display: block;
-    transform: rotate(45deg) scale(var(--ggs,1));
-    width: 30px;
-    height: 30px;
-    border: 1px solid #293566;
+    display: inline-block;
     left: 24px;
-    right: 12px;
-
+    top: 6px;
+}
+.nav_home .button-fill{
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+.nav_home:hover .button-fill{
+    display: inline;
 }
 
 nav h3{
@@ -46,10 +51,10 @@ nav h3{
 }
 
 header{
-    margin: 15vh auto;
-    padding: 12px;
+    margin: 0 auto;
+    padding: 15vh 12px;
     max-width: 800px;
-    min-height: 60vh;
+    min-height: 100vh;
     font-family: 'Ortica-Light', Ortica;
     font-weight: lighter;
 }
@@ -61,8 +66,9 @@ header h1{
     font-weight: bold;
     font-size: 4.2em;  
 }
-.author{
-    
+.previous{
+    position: relative;
+    margin-left: 24px;
 }
 .author h3{
     /*border: 1px solid red;*/
@@ -82,6 +88,6 @@ a{text-decoration: none;}
     max-width: 800px;
     color: #383838;
     font-size: 1.2em;
-    font-family: 'Apfel Grotezk';
+    font-family: 'Apfel Grotezk', sans-serif;
     line-height: 1.3em;
 }

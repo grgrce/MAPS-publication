@@ -91,7 +91,6 @@ a{text-decoration: none;}
     font-family: 'Apfel Grotezk', sans-serif;
     line-height: 1.3em;
 }
-
 .gallery{
     display: flex;
     flex-flow: row wrap;

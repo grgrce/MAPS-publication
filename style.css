@@ -62,7 +62,7 @@ body{
 
 
 .about{
-    background:rgb(19, 58, 90);
+    background:#293566;
     color: rgb(232, 232, 232);
     display: flex;
     justify-content: space-between;

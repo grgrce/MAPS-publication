@@ -91,3 +91,16 @@ a{text-decoration: none;}
     font-family: 'Apfel Grotezk', sans-serif;
     line-height: 1.3em;
 }
+
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 900px;
+    margin: 10vh auto;
+    justify-content: center;
+
+}
+.gallery img{
+    margin: 24px 24px;
+    max-width: 24vw;
+}

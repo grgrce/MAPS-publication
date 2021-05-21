@@ -30,8 +30,9 @@ nav{
 .nav_home{
     position: absolute;
     display: inline-block;
+    top:6px;
     left: 24px;
-    top: 6px;
+    /* top: 6px; */
 }
 .nav_home .button-fill{
     display: none;

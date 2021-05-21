@@ -12,18 +12,19 @@
 </head>
 
 <body>
-
-    <a class="nav_home" git >
-        <img src="../media/button.svg">
-        <img src="../media/button-fill.svg" class="button-fill">
+    <a class="nav_home" onclick="mobileTrick()">
+         <img src="../media/button.svg">
+         <img src="../media/button-fill.svg" class="button-fill">
     </a>
 
-    <div class="menu">
-        <li>
-            <ul>test</ul>
-        </li>
+    <div class="menu" id="menumobile">
+         <h1>You are almost welcome</h1>
+         <nav>
+             <a href="">about</a>
+             project = tap open curtains with 
+             <a href="/project/">Dafni Melidou</a>
+         </nav>
     </div>
-
     <div class="landing-page">
         <!--<h1>a very long title because we like long titles</h1>-->
         
@@ -117,5 +118,16 @@
         </div>
     </div>
     <script src="visions.js"></script>
+    <script>
+        function mobileTrick(){
+            var state = $('.menu').css('display')
+            console.log(state)
+            if (state == 'none'){
+                $('.menu').fadeIn();
+            } else if (state == 'block'){
+                location.reload()
+            }
+        }
+    </script>
 </body>
 </html>

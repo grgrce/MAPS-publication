@@ -77,7 +77,7 @@ app.ticker.add(() => {
     // iterate through the dudes and update their position
     for (let i = 0; i < aliens.length; i++) {
         const dude = aliens[i];
-        dude.direction += dude.turningSpeed/300 ;
+        dude.direction += dude.turningSpeed/400 ;
         dude.x += Math.sin(dude.direction) * dude.direction;
         dude.y += Math.cos(dude.direction) * dude.speed * 0.001;
         dude.rotation = dude.direction - Math.PI * 0.3;

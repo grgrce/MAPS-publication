@@ -37,11 +37,11 @@ for (let i = 0; i < totalDudes; i++) {
     
     // this number will be used to modify the direction of the dude over time
     // dude.turningSpeed = Math.random() ;
-    dude.turningSpeed = 0.05 ;
+    dude.turningSpeed = 0.08 ;
 
     // create a random speed for the dude between 2 - 4
     // dude.speed = 1 + Math.random();
-    dude.speed = 0.00000001;
+    dude.speed = 1;
 
     // Opt-in to interactivity
     dude.interactive = true;
@@ -77,9 +77,9 @@ app.ticker.add(() => {
     // iterate through the dudes and update their position
     for (let i = 0; i < aliens.length; i++) {
         const dude = aliens[i];
-        dude.direction += 0.0003  ;
-        dude.x += Math.sin(dude.direction) * dude.turningSpeed ;
-        dude.y += Math.cos(dude.direction) * dude.direction * 0.09;
+        dude.direction += dude.turningSpeed/300 ;
+        dude.x += Math.sin(dude.direction) * dude.direction;
+        dude.y += Math.cos(dude.direction) * dude.speed * 0.009;
         dude.rotation = dude.direction - Math.PI * 0.3;
 
         // wrap the dudes by testing their boundsmedia.

@@ -46,8 +46,10 @@ body{
 }
 
 .landing-page p{
-    /* text-overflow: ellipsis;
-    white-space: nowrap; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 100vh;
+    /*white-space: nowrap; */
     font-size: 4vh;
     text-align: justify;
     margin: 0;

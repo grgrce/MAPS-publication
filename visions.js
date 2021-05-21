@@ -37,7 +37,7 @@ for (let i = 0; i < totalDudes; i++) {
     
     // this number will be used to modify the direction of the dude over time
     // dude.turningSpeed = Math.random() ;
-    dude.turningSpeed = 0.08 ;
+    dude.turningSpeed = 0.05 ;
 
     // create a random speed for the dude between 2 - 4
     // dude.speed = 1 + Math.random();
@@ -78,7 +78,7 @@ app.ticker.add(() => {
     for (let i = 0; i < aliens.length; i++) {
         const dude = aliens[i];
         dude.direction += dude.turningSpeed * 0.03;
-        dude.x += Math.sin(dude.direction) * dude.direction;
+        dude.x += Math.sin(dude.direction) * dude.direction ;
         dude.y += Math.cos(dude.direction) * dude.speed * 0.009;
         dude.rotation = dude.direction - Math.PI * 0.3;
 

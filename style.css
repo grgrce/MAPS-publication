@@ -122,14 +122,31 @@ canvas{
 }
 
 .nav_home{
-  display: block;
-  position: fixed;
-  z-index: 2000;
-  margin: 5vw;
+  position: absolute;
+  display: inline-block;
+  margin: 7vw;
+  z-index: 200;
+}
+
+.nav_home .button-fill{
+  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 200;
+}
+.nav_home:hover .button-fill{
+  display: inline;
 }
 
 .menu{
   width: 100%;
   height: 100vh;
+  position: relative;
+
+}
+
+.menu p{
+  z-index: 0;
+  border: solid 1px red;
 }
 }

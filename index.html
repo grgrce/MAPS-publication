@@ -13,15 +13,15 @@
 
 <body>
 
-    <a class="nav_home" onclick="$('.menu').fadeToggle()">
+    <a class="nav_home" onclick="mobileTrick()">
         <img src="../media/button.svg">
         <img src="../media/button-fill.svg" class="button-fill">
     </a>
 
-    <div class="menu">
-        <li>
-            <ul>test</ul>
-        </li>
+    <div class="menu" id="menumobile">
+        <p>
+            test
+        </p>
     </div>
 
     <div class="landing-page">
@@ -117,5 +117,16 @@
         </div>
     </div>
     <script src="visions.js"></script>
+    <script>
+        function mobileTrick(){
+            var state = $('.menu').css('display')
+            console.log(state)
+            if (state == 'none'){
+                $('.menu').fadeIn();
+            } else if (state == 'block'){
+                location.reload()
+            }
+        }
+    </script>
 </body>
 </html>

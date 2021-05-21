@@ -22,7 +22,7 @@ for (let i = 0; i < totalDudes; i++) {
 
     // set a random scale for the dude - no point them all being the same size!
     // dude.scale.set( 0.03 + Math.random() * 0.1);
-    dude.scale.set( 0.4 );
+    dude.scale.set( 0.5 );
 
     // finally lets set the dude to be at a random positionmedia
     dude.x = Math.random() * app.screen.width;
@@ -41,7 +41,7 @@ for (let i = 0; i < totalDudes; i++) {
 
     // create a random speed for the dude between 2 - 4
     // dude.speed = 1 + Math.random();
-    dude.speed = 1;
+    dude.speed = 0.00000001;
 
     // Opt-in to interactivity
     dude.interactive = true;
@@ -79,7 +79,7 @@ app.ticker.add(() => {
         const dude = aliens[i];
         dude.direction += dude.turningSpeed * 0.03;
         dude.x += Math.sin(dude.direction) * dude.direction ;
-        dude.y += Math.cos(dude.direction) * dude.speed * 0.009;
+        dude.y += Math.cos(dude.direction) * dude.direction * 0.009;
         dude.rotation = dude.direction - Math.PI * 0.3;
 
         // wrap the dudes by testing their boundsmedia.

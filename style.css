@@ -149,5 +149,31 @@ canvas{
   margin: 0;
 
 }
+.menu h1{
+  margin-top: 6px;
+  top: 0;
+  position:absolute;
+  font-family: 'Ortica';
+  color: #293566;
+  border: 1px solid red;
+}
+.menu nav{
+  padding: 6px;
+  margin-top: 10vh;
+  min-height: 90vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  font-family: 'Apfel Grotezk';
+  font-size: 24px;
+  color: #383838;
+}
+nav a{
+  text-decoration: none;
+  color: #383838;
+}
+.projects{
+  display: none;
+}
 
 }

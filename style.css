@@ -38,7 +38,8 @@ body{
     z-index: 0;
     margin: 0;
     padding: 0;
-    animation: animation 200s linear infinite;
+    letter-spacing: 10px;
+    animation: animation 600s linear infinite;
 
     /* overflow: hidden; */
     color: rgb(189, 189, 189);
@@ -51,9 +52,10 @@ body{
     overflow: hidden;
     max-height: 100vh;
     /*white-space: nowrap; */
-    font-size: 4vh;
+    font-size: 2.5vh;
     text-align: justify;
     margin: 0;
+    
 }
 
 /* 
@@ -127,8 +129,8 @@ canvas{
 .nav_home{
   position: absolute;
   display: inline-block;
-  top:6px;
-  left: 24px;
+  top:12px;
+  left: 18px;
   z-index: 200;
 }
 

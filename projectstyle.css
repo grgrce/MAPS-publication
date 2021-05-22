@@ -21,18 +21,20 @@ nav{
     top: 0%;
     display: flex;
     align-items: center;
-    justify-content: center; 
-    padding-bottom: 24px;  
+    justify-content: center;
+    
+    padding-bottom: 6px;  
     height: 12vh;
     width: 100vw;
     position: fixed; 
+    border: 1px solid red;
 }
 .nav_home{
     position: absolute;
     display: inline-block;
-    top:6px;
-    left: 24px;
-    /* top: 6px; */
+    top:12px;
+    left: 18px;
+    border: 1px solid red;
 }
 .nav_home .button-fill{
     display: none;
@@ -49,6 +51,7 @@ nav h3{
     font-family: 'Ortica';
     font-weight: lighter;
     margin: 0 24px;
+    border: 1px solid red;
 }
 
 header{

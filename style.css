@@ -69,7 +69,7 @@ body{
 
 
 
-.about{
+#about{
     background:#293566;
     color: rgb(232, 232, 232);
     display: flex;
@@ -88,16 +88,16 @@ body{
     margin: 0;
     /* border: red 2px solid; */
 }
-   
-.container h1{
-    top: 0;
-    font-family: 'Ortica-Light', Ortica;
-    font-weight: lighter;
-    font-size: 8vh;
-}
 .container p{
     font-size: 2.5vh;
     width: 40vw;
+}
+
+.container p2{
+  top: 0;
+  font-family: 'Ortica-Light', Ortica;
+  font-weight: lighter;
+  font-size: 8vh;
 }
 .colophon{
     margin-right: 2em;
@@ -108,9 +108,14 @@ body{
 
 .nav_home{
   display: none;
+  position: fixed;
 }
 
 .menu{
+  display: none;
+}
+
+#about2{
   display: none;
 }
 
@@ -127,7 +132,7 @@ canvas{
 }
 
 .nav_home{
-  position: absolute;
+  position: fixed;
   display: inline-block;
   top:12px;
   left: 18px;
@@ -136,7 +141,7 @@ canvas{
 
 .nav_home .button-fill{
   display: none;
-  position: absolute;
+  position: fixed;
   left: 0;
   z-index: 10;
 }
@@ -177,5 +182,48 @@ nav a{
 .projects{
   display: none;
 }
+
+.mobileStyle{
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  position: fixed;
+  z-index: 99;
+  background:#293566;
+  color: rgb(232, 232, 232);
+  justify-content: space-between;
+  /* padding: 2em; */
+  font-family: 'Apfel Grotezk'; 
+}
+
+#about2{
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  display: none;
+
+}
+
+#about{
+  display: none;
+}
+
+
+#about2 p{
+width: 100%;
+}
+
+.container p2{
+  top: 0;
+  font-family: 'Ortica-Light', Ortica;
+  font-weight: lighter;
+  font-size: 8vh;
+}
+
+#colophon2{
+display: none;
+}
+
+
 
 }

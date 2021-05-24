@@ -17,10 +17,12 @@
          <img src="../media/button-fill.svg" class="button-fill">
     </a>
 
-    <div class="menu" id="menumobile">
+    <div class="menu" id="menumobile" onclick="viaCose()">
          <h1>You are almost welcome</h1>
          <nav>
-             <a href="">about</a>
+             <!-- <a href="#about">about</a> -->
+             <a onclick="$('#about2').fadeIn()">About</a>
+             <a onclick="$('#colophon2').fadeIn()">Colophon</a>
              project = tap open curtains with 
              <div class="projects">
                 <a href="/Dafni_Melidou/">Dafni Melidou</a>
@@ -28,19 +30,6 @@
          </nav>
     </div>
     <div class="landing-page">
-        <!--<h1>a very long title because we like long titles</h1>-->
-        
-        <!--<div class="floatings">
-            <img src="/media/1.png" alt="1" style="max-width: 200px; height: auto;">
-            <img src="/media/2.png" alt="2" style="max-width: 300px; height: auto;">
-            <img src="/media/dafni.png" alt="dafni" style="max-width: 300px; height: auto;">
-            <img src="/media/emi.png" alt="emi" style="max-width: 300px; height: auto;">
-            <img src="/media/joao.png" alt="joao" style="max-width: 300px; height: auto;">
-            <img src="/media/sophie.png" alt="sophie" style="max-width: 150px; height: auto;">
-            <img src="/media/will.png" alt="will" style="max-width: 300px; height: auto;">
-            <img src="/media/petra.png" alt="petra" style="max-width: 300px; height: auto;">
-
-        </div>-->
         
         <p>
             Where I’m from, we also have the sea. But when I got here I felt very disconnected from the seascape. So many differences, like White and black, city and countryside… but what are the similarities we have? How do our differences shape us - but also connect us? It could be in the way that we experience loss. How would you tell a story of loss?	We have a considerable amount of agency when framing what happens to us. What we focus onis how many birds we accept as collateral damage. Is it 14,5 million or just 700.000? And do you know how many birds are killed by cats? Because if you acknowledge climate change but love cats you struggle. In the same way it’s our natural desire to see and our innate fear of darkness that deprives us of starry nights. Isn’t that funny that desires to make things clear often make us not able to see or to feel, but I feel out of place, and I feel my place is out of place, too. Constructions emerge to separate what is one, what was fluid. A big wave is coming and it keeps coming, bigger and bigger, to drag us to our darkest fears—that feeling of standing with a defiant look against the unknown. 	What are we afraid of? Why do we have fears?  Are they founded on things that might happen or are they just reimaginings of things that have already happened? ⸺ 
@@ -50,9 +39,9 @@
         </p>
     </div>
 
-    <div class="about">
+    <div id="about">
         <div class="container">
-            <h1>you are almost welcome</h1>
+            <p2>you are almost welcome</p2>
             <div class="project-about">
                 <p>Xerovidem aut volupis aut es moloria voloreptate si ape
                     -
@@ -96,17 +85,87 @@
             Copyright
         </div>
     </div>
+
+
+    <div id="about2" class="mobileStyle">
+        <div class="container">
+            <p2>you are almost welcome</p2>
+            <div class="project-about">
+                <p>Xerovidem aut volupis aut es moloria voloreptate si ape
+                    -
+                    rum as erum aut et fugit id quiduci andita quidel magnihil 
+                    magnis modit, a nonem il id quam, ventorro offic tes nus 
+                    minus mos elit que sam, as illam aut atia voles et alicip
+                    -
+                    sam endit offictempel illa atiuntur, tessime nimus.
+                    Am verspel eum harum aborum am di inulliqui comnia ip
+                    -
+                    sanimusda voluptaquos derum ipsapie ndaeped qui ut ex 
+                    ea duciligent que maximus evel ma sit iduciaescia ditinve 
+                    nimodia endi comnist quis que occus, qui simus dia eatur 
+                    aliquos illacculpa consecusciet aped 
+                    que nist eataturibus et doluptam eostem rerferatium fa
+                    -
+                    cest, sapid quiatium fuga. Equis am, simet volore cum at
+                    -
+                    quassum, consed quam, cores quatquisto ini a dollestrum 
+                    cuptatur sequia sum sunt et que quis cullorror sequis 
+                    exeruntur sentemo lorpos expla volorro ommod ulluptat 
+                    que poribus, si occuptaes doluptati utecest, quam do
+                    -
+                    lorum volor aut lic tem. Nemquis dolum qui volo dolores 
+                    trupti ullanis mo blabo. Ro ipsam faccae
+                    c tatiamus etur, qui corest, volorep reribuscit assini sequi
+                    -
+                    dit, sit, inim et, cupta cullit voloritae volupta net est optat
+                    -
+                    quam as res simus venim quamusdam nissime molorem 
+                    aborepr ationsere eostem quaecab ium comnientur, con
+                    -
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="colophon2" class="mobileStyle">
+        authors <br>
+        font <br>
+        design <br>
+        webdesign <br>
+        Copyright
+    </div>
+
+
     <script src="visions.js"></script>
     <script>
         function mobileTrick(){
             var state = $('.menu').css('display')
-            console.log(state)
+            var stateAbout = $('#about2').css('display')
+            var stateCol = $('#colophon2').css('display')
+
+            if (stateAbout == 'block'){
+                $('#about2').fadeOut()
+            }
+
+            if (stateCol == 'block'){
+                $('#colophon2').fadeOut()
+            }
+            
             if (state == 'none'){
                 $('.menu').fadeIn();
+                
             } else if (state == 'block'){
                 location.reload()
             }
         }
+
+        function viaCose(){
+            $('canvas').css('display','none')
+            $('.landing-page').css('display','none')
+            $('.menu').css('display','none')
+        }
+
+
     </script>
 </body>
 </html>

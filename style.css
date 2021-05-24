@@ -119,6 +119,10 @@ body{
   display: none;
 }
 
+#colophon2{
+  display: none;
+  }
+
 @media only screen and (max-width: 600px) {
   body{
     overflow-y: hidden;
@@ -162,8 +166,9 @@ canvas{
   position:absolute;
   font-family: 'Ortica';
   color: #293566;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
+
 .menu nav{
   padding: 6px;
   margin-top: 10vh;
@@ -175,6 +180,7 @@ canvas{
   font-size: 24px;
   color: #383838;
 }
+
 nav a{
   text-decoration: none;
   color: #383838;

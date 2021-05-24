@@ -52,7 +52,10 @@ nav h3{
     font-family: 'Ortica';
     font-weight: lighter;
     margin: 0 24px;
-    
+}
+.previous{
+    position: relative;
+    margin-left: 24px;
 }
 
 header{
@@ -71,10 +74,7 @@ header h1{
     font-weight: bold;
     font-size: 4.2em;  
 }
-.previous{
-    position: relative;
-    margin-left: 24px;
-}
+
 .author h3{
     /*border: 1px solid red;*/
     color: #707070; 
@@ -87,6 +87,15 @@ a{text-decoration: none;}
 .author a h3:hover{
     color: #293566;
 }
+.prelude{
+    margin: 10vh auto;
+    max-width: 800px;
+}
+.prelude img{
+    margin: 5vh auto;
+    max-height: 100vh;
+    object-fit: contain;
+}
 .project-description{
     margin: 10vh auto;
     padding:12px;
@@ -96,23 +105,55 @@ a{text-decoration: none;}
     font-family: 'Apfel Grotezk', sans-serif;
     line-height: 1.3em;
 }
+.project-description h3{
+    font-family: 'Ortica';   
+    font-weight: lighter; 
+    font-size: 1.8em; 
+    line-height: 0.4em;
+    margin-bottom: 8vh;
+}
+
 .gallery{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     max-width: 80vw;
     margin: 10vh auto;
     justify-content: center;
+    align-content: center;
 
 }
-.gallery img{
+/*.gallery img{
     margin: 12px 12px;
-    max-width: 30vw;
+    max-width: 80vw
+}*/
+
+/*da sistemareeeeeeee tutti i video*/
+.first-chapter iframe{
+    position: relative;
+    max-width: 700px;
+    margin: 5vh auto 5vh auto;
+}
+#first-chapter1{
+    max-width: 600;
 }
 @media only screen and (max-width: 600px) {
+    .prelude{
+        max-width: 90vw;
+        margin: 5vh auto ;
+    }
+    .prelude img{
+        max-width: 90vw;
+        object-fit: contain;
+    }
     .gallery{
         max-width: 100vw;
     }
-    .gallery img{
-        max-width: 40vw;
+    /*.gallery img{
+        max-width: 90vw;
+    }*/
+    #first-chapter1{
+        max-width: 80vw;
+        object-fit: contain;
     }
+    
 }

@@ -122,12 +122,15 @@ header h1{
     max-height: 80vh;
 }
 .second{
-    padding: 3px;
+    padding: 24px;
     height: 100vh;
     margin: 0 auto;
     /*border: 1px solid red;*/
     display: flex;
     align-items: center;
+}
+.item-second{
+    margin: 0 auto 0 30vw;
 }
 .second img{
     width: 100%;

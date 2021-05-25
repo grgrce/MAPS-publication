@@ -146,7 +146,7 @@ canvas{
 .nav_home .button-fill{
   display: none;
   position: fixed;
-  left: 0;
+  left: 18px;
   z-index: 10;
 }
 .nav_home:hover .button-fill{

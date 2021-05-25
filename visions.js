@@ -10,7 +10,7 @@ const aliens = [];
 
 const totalDudes = 11;
 
-const icons = [['media/Vera.png','Vera_Yijun_Zhou/index.html'],['media/Patricia.png','Patricia_Kuehfuss/index.html'],['media/Dafni.png','Dafni_Melidou/index.html'],['media/Emi.png','Emilia_Martin/index.html'],['media/Joao.png','João_Viegas/index.html'],['media/Petra.png','Petra_Kroon/index.html'],['media/Sophie.png','Sophie_Allerding/index.html'],['media/Will.png','Will_Boase/index.html'],['media/Rafa.png','Rafael_Roncato/index.html'],['media/Laura.png','Laura_Palau/index.html'],['media/Benedikte.png','Benedikte_Bergh_Iversen/index.html']]
+const icons = [['media/Vera.png','Vera_Yijun_Zhou/'],['media/Patricia.png','Patricia_Kuehfuss/'],['media/Dafni.png','Dafni_Melidou/'],['media/Emi.png','Emilia_Martin/'],['media/Joao.png','João_Viegas/'],['media/Petra.png','Petra_Kroon/'],['media/Sophie.png','Sophie_Allerding/'],['media/Will.png','Will_Boase/'],['media/Rafa.png','Rafael_Roncato/'],['media/Laura.png','Laura_Palau/'],['media/Benedikte.png','Benedikte_Bergh_Iversen/']]
 
 
 for (var i = 0; i < totalDudes; i++) {

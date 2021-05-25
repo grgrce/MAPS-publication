@@ -13,7 +13,7 @@ const totalDudes = 11;
 const icons = [['media/Vera.png','Vera_Yijun_Zhou/'],['media/Patricia.png','Patricia_Kuehfuss/'],['media/Dafni.png','Dafni_Melidou/'],['media/Emi.png','Emilia_Martin/'],['media/Joao.png','João_Viegas/'],['media/Petra.png','Petra_Kroon/'],['media/Sophie.png','Sophie_Allerding/'],['media/Will.png','Will_Boase/'],['media/Rafa.png','Rafael_Roncato/'],['media/Laura.png','Laura_Palau/'],['media/Benedikte.png','Benedikte_Bergh_Iversen/']]
 
 
-for (let i = 0; i < totalDudes; i++) {
+for (var i = 0; i < totalDudes; i++) {
     // create a new Sprite that uses the image name that we just generated as its source
     const dude = PIXI.Sprite.from(icons[i][0]);
 

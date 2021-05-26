@@ -137,6 +137,9 @@ border-radius: 8px;
     font-family: 'Apfel Grotezk';
     overflow-y: scroll;
 }
+.colophon a{
+  color: #f3f3f3;
+}
 
 .nav_home{
   display: none;
@@ -163,6 +166,17 @@ canvas{
   position: fixed;
   width: 100vw;
   margin: 0;
+}
+.header-menu{
+  background: linear-gradient(
+        to bottom,
+        #f0f0f0 8vh, 
+        rgba(240, 240, 240, 0)
+     );
+    top: 0%;      
+    height: 12vh;
+    width: 100vw;
+    position: fixed; 
 }
 
 .nav_home{

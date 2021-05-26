@@ -172,9 +172,10 @@ canvas{
 .menu{
   width: 100vw;
   height: 100vh;
-  z-index: 0;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 0;
 }
 .nav_home{
   position: fixed;
@@ -205,7 +206,7 @@ canvas{
     left: 0;     
     height: 12vh;
     width: 100vw;
-    position: absolute; 
+    position: fixed; 
 }
 .header-menu h1{
   margin-top: 12px;
@@ -237,7 +238,7 @@ canvas{
 .menu-item{
   padding: 1em 12px;
   border-bottom: 2px solid #f3f3f3;
-  min-height: 44vh;
+  height: 40vh;
   position: relative;
   display: inline-block;
   
@@ -246,14 +247,15 @@ nav #about-btn{
   text-decoration: none;
   color: #383838;
   position: absolute;
-  
   bottom: 0%;
 }
 nav .projects{
   margin-top: 0;
   display: inline-block;
-  margin-bottom: 5vh;
-  
+  margin-bottom: 0vh; 
+}
+nav #proj-btn{
+  border-bottom: hidden;
 }
 .listed-projects{
   display: none;

@@ -72,17 +72,17 @@ for (let i = 0; i < totalDudes; i++) {
 const dudeBoundsPadding = 1;
 const dudeBounds = new PIXI.Rectangle(-dudeBoundsPadding,
     -dudeBoundsPadding,
-    app.screen.width + dudeBoundsPadding * 2,
-    app.screen.height + dudeBoundsPadding * 5);
+    app.screen.width + dudeBoundsPadding,
+    app.screen.height + dudeBoundsPadding );
 
     
 app.ticker.add(() => {
     // iterate through the dudes and update their position
     for (let i = 0; i < aliens.length; i++) {
         const dude = aliens[i];
-        dude.direction += dude.turningSpeed/400 ;
+        dude.direction += dude.turningSpeed/500 ;
         dude.x += Math.sin(dude.direction) * dude.direction;
-        dude.y += Math.cos(dude.direction) * dude.speed * 0.009;
+        dude.y += Math.cos(dude.direction) * dude.speed * 0.0009;
         dude.rotation = dude.direction - Math.PI * 0.3;
 
         // wrap the dudes by testing their boundsmedia.

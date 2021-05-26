@@ -96,8 +96,10 @@
 
 
     <div id="about2" class="mobileStyle">
-    
-            <h1>you are almost welcome</h1>
+            <div class="header-menu">
+                <a onclick="aboutToHome()"><h1>You are almost welcome</h1></a>
+            </div>
+            <h1 class="about-title">you are almost welcome</h1>
             <div class="project-about">
                 <p>It’s a wild world, for sure! All the bits and pieces that we encounter every day - how do we
                     make sense of them all? </p>
@@ -166,6 +168,14 @@
                 $('.menu').fadeIn();
                 
             } else if (state == 'block'){
+                location.reload()
+            }
+        }
+
+        function aboutToHome(){
+            var stateAbout = $('#about2').css('display')  
+
+            if (stateAbout == 'block'){
                 location.reload()
             }
         }

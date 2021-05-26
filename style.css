@@ -151,9 +151,7 @@ border-radius: 8px;
   display: none;
 }
 
-#colophon2{
-  display: none;
-  }
+
 
 @media only screen and (max-width: 600px) {
   body{
@@ -207,7 +205,8 @@ canvas{
   min-height: 90vh;
   display: flex;
   flex-flow: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  justify-items: center;
   font-family: 'Apfel Grotezk';
   font-size: 24px;
   color: #383838;
@@ -216,6 +215,10 @@ canvas{
 nav a{
   text-decoration: none;
   color: #383838;
+  border-bottom: 2px solid #f3f3f3;
+}
+nav p{
+  margin: 0;
 }
 .projects{
   display: none;
@@ -226,36 +229,57 @@ nav a{
   height: 100vh;
   overflow-y: scroll;
   position: fixed;
+  padding: 12px;
   z-index: 99;
   background:#293566;
   color: rgb(232, 232, 232);
-  justify-content: space-between;
   /* padding: 2em; */
   font-family: 'Apfel Grotezk'; 
+  
 }
-
-#about2{
-  width: 100vw;
-  height: 100vh;
-  overflow-y: scroll;
-  display: none;
-
-}
-
 #about{
   display: none;
 }
+#about2{
+  width: 100vw;
+  
+  overflow-y: scroll;
+  display: none;
+}
+.mobileStyle h1{
+  margin-top: 10vh;
+  font-size: 10vh;
+  font-family: 'Ortica-Light', Ortica;
+  font-weight: lighter;
+}
+.mobileStyle p{
+  font-size: 2.5vh;
+  line-height: 1.3em;
+  width: 100vw;
+}
+.mobileStyle .project-about{
+  width: 95vw;
+}
 
+.mobileStyle .colophon2{
+  width: 70vw;
+  padding: 0;
+  margin: 30vh 0 10vh 0;
+  font-family: 'Apfel grotezk';
+}
+.colophon2 h3{
+  font-weight: lighter;
+}
+.colophon2 p{
+  font-size: 2vh;
+  line-height: 1.4em;
+}
+.colophon2 a{
+  color: #f3f3f3;
+}
 
 #about2 p{
 width: 100%;
 }
-
-
-#colophon2{
-display: none;
-}
-
-
 
 }

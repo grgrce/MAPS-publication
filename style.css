@@ -160,6 +160,7 @@ border-radius: 8px;
   body{
     overflow-y: hidden;
     width: 100vw;
+    height: 100vh;
     margin: 0;
   }
 canvas{
@@ -173,7 +174,7 @@ canvas{
   height: 100vh;
   z-index: 0;
   margin: 0;
-
+  overflow-x: hidden;
 }
 .nav_home{
   position: fixed;
@@ -213,12 +214,17 @@ canvas{
   position:absolute;
   font-family: 'Ortica';
   color: #293566;
-  /* border: 1px solid red; */
+  border: 1px solid red; 
+  height: 6vh;
+  width: 100vw;
+  
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu nav{
   padding: 12px;
-  margin-top: 10vh;
+  margin-top: 0vh;
   min-height: 90vh;
   display: flex;
   flex-flow: column;
@@ -231,20 +237,37 @@ canvas{
 .menu-item{
   padding: 1em 12px;
   border-bottom: 2px solid #f3f3f3;
-  min-height: 45vh;
+  min-height: 44vh;
   position: relative;
+  display: inline-block;
+  
 }
 nav #about-btn{
   text-decoration: none;
   color: #383838;
   position: absolute;
-  bottom: 1em;
+  
+  bottom: 0%;
 }
-nav p{
-  margin: 0;
+nav .projects{
+  margin-top: 0;
+  display: inline-block;
+  margin-bottom: 5vh;
+  
 }
-.projects{
+.listed-projects{
   display: none;
+  padding: 1em;
+}
+.listed-projects a{
+  text-decoration: none;
+  color: #383838;
+  display: block;
+  padding: 2vh 2vw;
+  border-bottom: 2px solid #f3f3f3;
+}
+.show{
+  display:block;
 }
 
 .mobileStyle{

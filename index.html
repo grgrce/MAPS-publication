@@ -21,14 +21,26 @@
         <div class="header-menu">
             <a onclick="mobileTrick()"><h1>You are almost welcome</h1></a>
         </div>
-         <nav onclick="viaCose()">
+         <nav >
              <!-- <a href="#about">about</a> -->
-             <a class="menu-item" onclick="$('#about2').fadeIn()"><p id="about-btn">About</p></a>
-             <div class="menu-item"><p>projects</p></div>
+             <a class="menu-item"  onclick="$('#about2').fadeIn(); viaCose()"><p id="about-btn">About</p></a>
+             <div class="menu-item" >
+                 <div class="projects" id="projects" onclick="listProjects()" >Projects</div>
+                 <div id="projectList" class="listed-projects">
+                    <a href="/Benedikte_Bergh_Iversen/index.html">Benedikte Bergh Iversen</a>
+                    <a href="/Dafni_Melidou/index.html">Dafni Melidou</a>
+                    <a href="/Emilia_Martin/index.html">Emilia Martin</a>
+                    <a href="/João_Viegas/index.html">JoãoViegas</a>
+                    <a href="/Laura_Palau/index.html">Laura Palau</a>
+                    <a href="/Patricia_Kuehfuss/index.html">Patricia Kühfuss</a>
+                    <a href="/Petra_Kroon/">Petra Kroon</a>
+                    <a href="/Rafael_Roncato/index.html">Rafael Roncato</a>
+                    <a href="/Sophie_Allerding/">Sophie Allerding</a>
+                    <a href="/Vera_Yijun_Zhou/index.html">Vera Yijun Zhou</a>
+                    <a href="/Will_Boase/index.html">Will Boase</a>
+                </div>
+            </div>
              
-             <div class="projects">
-                <a href="/Dafni_Melidou/">Dafni Melidou</a>
-             </div>
          </nav>
     </div>
     <div class="landing-page">
@@ -171,6 +183,24 @@
                 location.reload()
             }
         }
+
+        function listProjects(){
+            document.getElementById("projectList").classList.toggle("show");
+        }
+        //close the list of proj if the user clicks outside of it
+        window.onclick = function(event){
+            if(!event.target.matches('.projects')){
+                var dropdowns = document.getElementsByClassName("listed-projects");
+                var i;
+                for (i = 0; i < dropdowns.length; i++){
+                    var openDropdown = dropdowns[i];
+                    if(openDropdown.classList.contains('show')){
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
 
         function aboutToHome(){
             var stateAbout = $('#about2').css('display')  

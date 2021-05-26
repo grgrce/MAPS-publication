@@ -115,16 +115,17 @@ header h1{
 .gallery{
     display: flex;
     flex-flow: column;
-    max-width: 80vw;
+    max-width: 900px;
     margin: 10vh auto;
     align-content: center;
+    align-items: center;
     
 
 }
 
 .gallery img{
-    margin: 10vh 0;
-    max-height: 90vh;
+    margin: 15vh 0;
+    max-height: 85vh;
     max-width: 100vw;
     object-fit: contain;
 
@@ -134,17 +135,16 @@ header h1{
         width: 90vw;
     }
     .gallery{
-        width: 100vw;
+        
         margin: 10vh 0;
     }
     
     .item-first{
         justify-self: center; 
-        margin: 10vh 0;  
-        width: 100vw;
+        margin: 5vh 0;  
+        max-width: 100vw;
     }
     .gallery img{
-        width: 100vw;
         object-fit: contain;
         padding: 3px;
     }

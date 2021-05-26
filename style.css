@@ -206,16 +206,22 @@ canvas{
   display: flex;
   flex-flow: column;
   justify-content: center;
-  justify-items: center;
+  align-content: center;
   font-family: 'Apfel Grotezk';
   font-size: 24px;
   color: #383838;
 }
-
-nav a{
+.menu-item{
+  padding: 1em 12px;
+  border-bottom: 2px solid #f3f3f3;
+  min-height: 45vh;
+  position: relative;
+}
+nav #about-btn{
   text-decoration: none;
   color: #383838;
-  border-bottom: 2px solid #f3f3f3;
+  position: absolute;
+  bottom: 1em;
 }
 nav p{
   margin: 0;
@@ -242,7 +248,7 @@ nav p{
 }
 #about2{
   width: 100vw;
-  
+  z-index: 100;
   overflow-y: scroll;
   display: none;
 }

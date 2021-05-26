@@ -17,12 +17,13 @@
          <img src="../media/button-fill.svg" class="button-fill">
     </a>
 
-    <div class="menu" id="menumobile" onclick="viaCose()">
-         <h1>You are almost welcome</h1>
-         <nav>
+    <div class="menu" id="menumobile" >
+         <a class="header-to-home"><h1>You are almost welcome</h1></a>
+         <nav onclick="viaCose()">
              <!-- <a href="#about">about</a> -->
-             <a onclick="$('#about2').fadeIn()">About</a>
-             <p>projects</p>
+             <a class="menu-item" onclick="$('#about2').fadeIn()"><p id="about-btn">About</p></a>
+             <div class="menu-item"><p>projects</p></div>
+             
              <div class="projects">
                 <a href="/Dafni_Melidou/">Dafni Melidou</a>
              </div>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>You are almost welcome</title>
     <link rel="stylesheet" href="projectstyle.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <nav>
@@ -39,28 +40,54 @@
     </div>
     <div class="flex-container">
         <div class="flex-left">
-            <img src="0.jpg" alt="01">
-            <img src="1.jpg" alt="02">
-            <img src="2.jpg" alt="03">
-            <img src="3.jpg" alt="04">
-            <img src="4.jpg" alt="05">
-            <img src="5.jpg" alt="06">
-            <img src="6.jpg" alt="07">
-            <img src="7.jpg" alt="08">        </div>
+            <img class="pics" src="0.jpg" alt="01">
+            <img class="pics" src="1.jpg" alt="02">
+            <img class="pics" src="2.jpg" alt="03">
+            <img class="pics" src="3.jpg" alt="04">
+            <img class="pics" src="4.jpg" alt="05">
+            <img class="pics" src="5.jpg" alt="06">
+            <img class="pics" src="6.jpg" alt="07">
+            <img class="pics" src="7.jpg" alt="08">        </div>
         <div class="flex-right">
 
-            <img src="8.jpg" alt="09">
-            <img src="9.jpg" alt="10">
-            <img src="10.jpg" alt="11">
-            <img src="11.jpg" alt="12">
-            <img src="12.jpg" alt="13">
-            <img src="13.jpg" alt="14">
-            <img src="14.jpg" alt="15">
-            <img src="15.jpg" alt="16">        </div>    </div>
+            <img class="pics" src="8.jpg" alt="09">
+            <img class="pics" src="9.jpg" alt="10">
+            <img class="pics" src="10.jpg" alt="11">
+            <img class="pics" src="11.jpg" alt="12">
+            <img class="pics" src="12.jpg" alt="13">
+            <img class="pics" src="13.jpg" alt="14">
+            <img class="pics" src="14.jpg" alt="15">
+            <img class="pics" src="15.jpg" alt="16">        </div>    </div>
     
     <div class="gallery">
 
         
     </div>
+
+    <script>
+
+        var number;
+        // setInterval(function() {
+        jQuery.each(jQuery('.pics'),function(){
+            var number =  Math.floor(Math.random() * 30);
+            var number2 =  10+ Math.floor(Math.random() * 20);
+            var number3 =  70 + Math.floor(Math.random() * 30);
+            console.log(number3)
+            
+            jQuery(this).css('margin-left', number+'vw');
+            jQuery(this).css('margin-top', number2+'vw');
+            jQuery(this).css('width', number3+'vw');
+            // console.log(jQuery(this).css('margin-right', number+'vh'))
+          });
+        // }, 1000);
+
+        // $('.pics').forEach(element => {
+        //     console.log(element)
+        //     number = 1 + Math.floor(Math.random() * 16);
+        // });
+
+
+
+    </script>
 </body>
 </html>

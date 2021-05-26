@@ -137,7 +137,7 @@ text-align: center; margin: 5% auto;
     /* margin-left: auto;
     margin-right: auto; */
      /* display: block; */
-    border: solid red 1px;
+    /* border: solid red 1px; */
 }
 
 .flex-right {
@@ -151,7 +151,7 @@ text-align: center; margin: 5% auto;
     margin-left: auto;
     margin-right: auto;
     display: block; */
-    border: solid blue 1px;
+    /* border: solid blue 1px; */
 }
 
 @media only screen and (max-width: 600px) {

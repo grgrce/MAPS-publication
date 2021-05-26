@@ -136,7 +136,27 @@ a{text-decoration: none;}
 #first-chapter1{
     max-width: 600;
 }
+iframe{
+    width: 40vw;
+    height:23.5vw;
+}
+
+
+@media only screen and (max-width: 900px) {
+    iframe{
+        width: 80vw;
+        height:47vw;
+    }
+}
+
+
+
 @media only screen and (max-width: 600px) {
+
+    iframe{
+        width: 80vw;
+        height:47vw;
+    }
     .prelude{
         max-width: 90vw;
         margin: 5vh auto ;

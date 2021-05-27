@@ -1,4 +1,7 @@
-if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {alert('Its Safari');}
+var ua = navigator.userAgent.toLowerCase(); 
+if (ua.indexOf('safari') != -1) { 
+  alert('Hello! Please, change browser: Safari not supported')
+}
 
 const app = new PIXI.Application({ 
     transparent: true,  

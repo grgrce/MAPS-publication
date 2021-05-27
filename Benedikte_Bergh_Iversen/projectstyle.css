@@ -4,9 +4,12 @@
          url("../font/Ortica-Light.woff2") format("woff2"),
          url("../font/Ortica-Bold.woff") format("woff"),
          url("../font/Ortica-Bold.woff2") format("woff2");
+}
+@font-face {
     font-family: "Apfel Grotezk";
     src: url("../font/ApfelGrotezk-Regular.woff") format("woff");
 }
+
 *{
     box-sizing: border-box;
 }

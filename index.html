@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101318989);</script>
+<script async src="//static.getclicky.com/js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,13 +27,13 @@
     <meta property="og:description" content="It’s a wild world, for sure! All the bits and pieces that we encounter every day - how do we make sense of them all?<br>This website represents a collective gathering of perspectives explored by the 2020 class of the MA Photography & Society (MAPS) at the Royal Academy of Art in The Hague, NL."/>
 
     <meta property="og:url" content="http://almostwelcome.com/">
-    <meta property="og:image" content="http://http://grgrce.github.io/MAPS-publication/media/oc-maps.jpg/">
+    <meta property="og:image" content="https://almostwelcome.com/media/oc-maps.jpg">
     <meta property="og:site_name" content="You Are Almost Welcome">
     <link rel="stylesheet" type="text/css" href="style.css">
    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script> -->
+       <script src="pixi.min.js"></script>-->
     <script src="jquery-3.6.0.min.js"></script>
-    <script src="pixi.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>  
     
     
 
@@ -248,9 +251,15 @@
         }
 
         var ua = navigator.userAgent.toLowerCase(); 
-        if (ua.indexOf('safari') != -1) { 
-          alert('Hello! Please, change browser: with Safari you cannot click the floating images :(')
-        }
+        console.log(ua);
+        if (ua.indexOf('safari') == 104) { 
+            alert('Hello! Please, change browser: with Safari you cannot click the floating images :(')
+//   if (ua.indexOf('chrome') > -1) {
+//     console.log('chro')
+//   } else {
+   
+//   }
+}
 
     </script>
 </body>

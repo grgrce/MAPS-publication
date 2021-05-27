@@ -118,6 +118,7 @@ border-radius: 8px;
     font-family :'Apfel Grotezk';
 } 
 
+
 .container h1{
   position: relative;
   top: 0;
@@ -209,20 +210,44 @@ canvas{
     width: 100vw;
     position: fixed; 
     z-index: 2;
+    
+}
+.header-menu .header-wrap{
+  position:relative;
+  display: block;
+  width: 89vw;
+  height: 36px;
+  top: 12px;
+  left: 30px;  
+  overflow: hidden;
+  
+}
+@keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(50%);
+      -webkit-transform: translateX(50%);
+      transform: translateX(50%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+  }
 }
 .header-menu h1{
-  margin-top: 12px;
+  margin-top: 0px;
   left: 24px;
   top: 0;
   position:absolute;
   font-family: 'Ortica';
-  color: #293566;
-  border: 1px solid red; 
+  color: #293566; 
   height: 6vh;
   width: 100vw;
   
   overflow-x: hidden;
-  text-overflow: ellipsis;
+  -moz-animation: scroll-left 2.5s linear infinite;
+  -webkit-animation: scroll-left 2.5s linear infinite;
+  animation: scroll-left 15s linear infinite;
 }
 
 .menu nav{

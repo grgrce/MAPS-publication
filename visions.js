@@ -12,7 +12,7 @@ const aliens = [];
 
 const totalDudes = 11;
 
-const icons = [['media/Vera.png','Vera_Yijun_Zhou/index.html'],['media/Patricia.png','Patricia_Kuehfuss/'],['media/Dafni.png','Dafni_Melidou/'],['media/Emi.png','Emilia_Martin/'],['media/Joao.png','Joao_Viegas/'],['media/Petra.png','Petra_Kroon/'],['media/Sophie.png','Sophie_Allerding/'],['media/Will.png','Will_Boase/'],['media/Rafa.png','Rafael_Roncato/'],['media/Laura.png','Laura_Palau/'],['media/Benedikte.png','Benedikte_Bergh_Iversen/']]
+const icons = [['media/Vera.png','Vera_Yijun_Zhou/index.html'],['media/Patricia.png','Patricia_Kuehfuss/'],['media/dafni.png','Dafni_Melidou/'],['media/emi.png','Emilia_Martin/'],['media/Joao.png','Joao_Viegas/'],['media/petra.png','Petra_Kroon/'],['media/sophie.png','Sophie_Allerding/'],['media/will.png','Will_Boase/'],['media/Rafa.png','Rafael_Roncato/'],['media/Laura.png','Laura_Palau/'],['media/Benedikte.png','Benedikte_Bergh_Iversen/']]
 
 
 for (let i = 0; i < totalDudes; i++) {

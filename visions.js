@@ -1,4 +1,3 @@
-var SAFARIMERDA;
 
 const app = new PIXI.Application({ 
     transparent: true,  
@@ -57,11 +56,11 @@ for (let i = 0; i < totalDudes; i++) {
     // finally we push the dude into the aliens array so it it can be easily accessed later
     aliens.push(dude);
     
-    let SAFARIMERDA = icons[i][1];
+    var SAFARIMERDA = icons[i][1];
 
     function onClick() {
-        console.log(this.SAFARIMERDA)
-        console.log('nca')
+        console.log(SAFARIMERDA)
+        console.log('ntest')
         console.log(this.SAFARIMERDA)
         //window.open(this.SAFARIMERDA,"_self");
          //dude.scale.x *= 1.25;

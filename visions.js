@@ -61,7 +61,7 @@ for (let i = 0; i < totalDudes; i++) {
 
     function onClick() {
         console.log(this.SAFARIMERDA)
-        console.log('canca')
+        console.log('nca')
         console.log(this.SAFARIMERDA)
         //window.open(this.SAFARIMERDA,"_self");
          //dude.scale.x *= 1.25;

@@ -114,36 +114,61 @@ a{text-decoration: none;}
 }
 
 .gallery{
+    color: #383838;
+    font-size: 1.2em;
     display: flex;
     flex-flow: column wrap;
     max-width: 80vw;
     margin: 10vh auto;
     justify-content: center;
     align-content: center;
-
 }
-/*.gallery img{
+.gallery h3{
+    font-family: 'Ortica';   
+    font-weight: lighter; 
+    font-size: 1.8em; 
+    line-height: 0.4em;
+    margin: 8vh;
+    text-align: center;
+}
+.chapter{
+    margin: 10vh auto;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    
+}
+.gallery img{
     margin: 12px 12px;
-    max-width: 80vw
-}*/
+    max-height: 80vh;
+    object-fit: contain;
+}
 
-/*da sistemareeeeeeee tutti i video*/
-.first-chapter iframe{
-    position: relative;
-    max-width: 700px;
-    margin: 5vh auto 5vh auto;
-}
-#first-chapter1{
-    max-width: 600;
-}
+
 iframe{
+    margin: 10vh auto;
     width: 40vw;
     height:23.5vw;
+    align-self: center;
 }
 
+.sequence{
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    align-content: center;
+    justify-content: space-around;
+    margin: auto 0;
+    
+}
+.sequence img{
+    max-height: 40vh;
+    object-fit: contain;
+}
 
 @media only screen and (max-width: 900px) {
     iframe{
+        margin: 10vh 0;
         width: 80vw;
         height:47vw;
     }
@@ -154,6 +179,7 @@ iframe{
 @media only screen and (max-width: 600px) {
 
     iframe{
+        margin: 10vh 0;
         width: 80vw;
         height:47vw;
     }
@@ -168,12 +194,11 @@ iframe{
     .gallery{
         max-width: 100vw;
     }
-    /*.gallery img{
+    .gallery img{
         max-width: 90vw;
-    }*/
-    #first-chapter1{
-        max-width: 80vw;
-        object-fit: contain;
     }
+    
+        
+    
     
 }

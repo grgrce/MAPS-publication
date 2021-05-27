@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Ortica";
     src: url("../font/Ortica-Light.woff") format("woff"),
-         url("../font/Ortica-Light.woff2") format("woff2"),
+         url("../font/Ortica-Light.woff2") format("woff2");
          
 }
 @font-face{

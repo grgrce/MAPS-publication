@@ -2,8 +2,12 @@
     font-family: "Ortica";
     src: url("../font/Ortica-Light.woff") format("woff"),
          url("../font/Ortica-Light.woff2") format("woff2"),
-         url("../font/Ortica-Bold.woff") format("woff"),
-         url("../font/Ortica-Bold.woff2") format("woff2");
+         
+}
+@font-face{
+    font-family: "Ortica-Bold";
+    src:url("../font/Ortica-Bold.woff") format("woff"),
+        url("../font/Ortica-Bold.woff2") format("woff2");
 }
 @font-face {
     font-family: "Apfel Grotezk";
@@ -71,7 +75,7 @@ header{
 header h1{
     margin-top: 4vh;
     color: #293566;
-    font-family: 'Ortica';
+    font-family: 'Ortica-Bold';
     font-weight: bold;
     font-size: 4.2em;  
 }

@@ -130,6 +130,26 @@ header h1{
     object-fit: contain;
 
 }
+iframe{
+    width: 60vw;
+    height:80vh;
+    margin: 10vh 0;
+}
+
+img{
+    margin: 0;
+    max-width: 20vw;
+    object-fit: contain;
+}
+@media only screen and (max-width: 900px) {
+    iframe{
+        width: 95vw;
+        height:47vh;
+        margin: 10vh auto;
+    }
+}
+
+
 @media only screen and (max-width: 600px) {
     .quote{
         width: 90vw;
@@ -145,8 +165,14 @@ header h1{
         max-width: 100vw;
     }
     .gallery img{
+        max-width: 95vw;
         object-fit: contain;
         padding: 3px;
+    }
+    iframe{
+        width: 95vw;
+        height:47vh;
+        margin: 10vh auto;
     }
 
 }

@@ -129,7 +129,7 @@ iframe{
 @media only screen and (max-width: 900px) {
     iframe{
         width: 80vw;
-        height:47vw;
+        height:47vh;
     }
 }
 

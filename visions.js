@@ -57,10 +57,10 @@ for (let i = 0; i < totalDudes; i++) {
     // finally we push the dude into the aliens array so it it can be easily accessed later
     aliens.push(dude);
     
-   let SAFARIMERDA = icons[i][1];
+   //let SAFARIMERDA = icons[i][1];
 
     function onClick() {
-        window.open(SAFARIMERDA,"_self");
+        window.open(icons[i][1],"_self");
          //dude.scale.x *= 1.25;
          //dude.scale.y *= 1.25;
     }

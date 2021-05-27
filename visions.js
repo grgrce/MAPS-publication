@@ -60,7 +60,7 @@ for (let i = 0; i < totalDudes; i++) {
     SAFARIMERDA = icons[i][1];
 
     function onClick() {
-        console.log(this.SAFARIMERDA)
+        console.log(SAFARIMERDA)
         window.open(this.SAFARIMERDA,"_self");
          //dude.scale.x *= 1.25;
          //dude.scale.y *= 1.25;

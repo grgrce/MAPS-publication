@@ -62,7 +62,8 @@ for (let i = 0; i < totalDudes; i++) {
     function onClick() {
         console.log(this.SAFARIMERDA)
         console.log('canca')
-        window.open(this.SAFARIMERDA,"_self");
+        console.log(this.SAFARIMERDA)
+        //window.open(this.SAFARIMERDA,"_self");
          //dude.scale.x *= 1.25;
          //dude.scale.y *= 1.25;
     }

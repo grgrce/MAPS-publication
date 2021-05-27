@@ -1,7 +1,9 @@
 @font-face {
     font-family: "Ortica";
     src: url("../font/Ortica-Light.woff") format("woff"),
-         url("../font/Ortica-Light.woff2") format("woff2");
+         url("../font/Ortica-Light.woff2") format("woff2"),
+         url("../font/Ortica-Bold.woff") format("woff"),
+         url("../font/Ortica-Bold.woff2") format("woff");
     font-family: "Apfel Grotezk";
     src: url("../font/ApfelGrotezk-Regular.woff") format("woff");
 }

@@ -82,7 +82,7 @@ app.ticker.add(() => {
         const dude = aliens[i];
         dude.direction += dude.turningSpeed/500 ;
         dude.x += Math.sin(dude.direction) * dude.direction;
-        dude.y += Math.cos(dude.direction) * dude.speed * 0.0009;
+        dude.y += Math.cos(dude.direction) * dude.speed * 0.0009 ;
         dude.rotation = dude.direction - Math.PI * 0.3;
 
         // wrap the dudes by testing their boundsmedia.

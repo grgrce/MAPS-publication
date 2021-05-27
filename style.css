@@ -138,6 +138,20 @@ border-radius: 8px;
     font-family: 'Apfel Grotezk';
     overflow-y: scroll;
 }
+.colophon::-webkit-scrollbar {
+  width: 0.6vw;
+  margin: 10px, 10px, 10px, 10px;
+}
+
+.colophon::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+  border-radius: 8px
+}
+
+.colophon::-webkit-scrollbar-thumb {
+background-color: #435080;
+border-radius: 8px;
+}
 .colophon a{
   color: #f3f3f3;
 }

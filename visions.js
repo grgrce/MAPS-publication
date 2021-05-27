@@ -61,8 +61,8 @@ for (let i = 0; i < totalDudes; i++) {
 
     function onClick() {
         window.open(SAFARIMERDA,"_self");
-        // dude.scale.x *= 1.25;
-        // dude.scale.y *= 1.25;
+         //dude.scale.x *= 1.25;
+         //dude.scale.y *= 1.25;
     }
 
     app.stage.addChild(dude);

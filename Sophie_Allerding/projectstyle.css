@@ -110,7 +110,7 @@ img{
    
 }
 
-img{
+.project-description img{
     /* margin: 5vh 0; */
     max-height: 80vh;
     max-width: 50%;

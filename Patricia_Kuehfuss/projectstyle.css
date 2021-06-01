@@ -69,11 +69,21 @@ header{
     margin: 0 auto;
     padding: 15vh 12px;
     max-width: 800px;
-    min-height: 100vh;
+    min-height: 70vh;
     font-family: 'Ortica-Light', Ortica;
     font-weight: lighter;
 }
 
+header h1{
+    margin-top: 4vh;
+    color: #293566;
+    font-family: 'Ortica';
+    font-size: 4.2em;  
+}
+.previous{
+    position: relative;
+    margin-left: 24px;
+}
 .author h3{
     /*border: 1px solid red;*/
     color: #707070; 
@@ -86,16 +96,8 @@ a{text-decoration: none;}
 .author a h3:hover{
     color: #293566;
 }
-header h1{
-    margin-top: 4vh;
-    color: #293566;
-    font-family: 'Ortica-Bold';
-    font-weight: bold;
-    font-size: 4.2em;  
-}
-
 .project-description{
-    margin: 10vh auto;
+    margin: 0 auto;
     padding:12px;
     max-width: 800px;
     color: #383838;
@@ -163,6 +165,7 @@ header h1{
 .third img{
     width: 100%;
     max-height: 60vh;
+    object-fit: contain;
     
 }
 .fourth{
@@ -215,6 +218,7 @@ header h1{
 .sixth img{
     width: 100%;
     max-height: 40vh;
+    object-fit: contain;
 }
 .seventh{
     padding: 3px;
@@ -250,6 +254,7 @@ header h1{
 .eighth img{
     width: 100%;
     max-height: 70vh;
+    object-fit: contain;
 }
 .nineth{
     padding: 3px;

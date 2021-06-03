@@ -13,13 +13,11 @@ const totalDudes = 11;
 
 const icons = [['media/Vera.png','Vera_Yijun_Zhou/index.html'],['media/Patricia.png','Patricia_Kuehfuss/'],['media/dafni.png','Dafni_Melidou/'],['media/emi.png','Emilia_Martin/'],['media/Joao.png','Joao_Viegas/'],['media/petra.png','Petra_Kroon/'],['media/sophie.png','Sophie_Allerding/'],['media/will.png','Will_Boase/'],['media/Rafa.png','Rafael_Roncato/'],['media/Laura.png','Laura_Palau/'],['media/Benedikte.png','Benedikte_Bergh_Iversen/']]
 
-
-for (let i = 0; i < totalDudes; i++) {
+icons.forEach (function (icon) {
     // create a new Sprite that uses the image name that we just generated as its source
-    const dude = PIXI.Sprite.from(icons[i][0]);
+    const dude = PIXI.Sprite.from(icon[0]);
 
-    // set the anchor point so the texture is centerd on the sprite
-    // dude.anchor.set();
+    
 
     // set a random scale for the dude - no point them all being the same size!
     // dude.scale.set( 0.03 + Math.random() * 0.1);
@@ -59,17 +57,14 @@ for (let i = 0; i < totalDudes; i++) {
     //var SAFARIMERDA = icons[i][1];
 
     function onClick() {
-//         console.log(SAFARIMERDA)
-//         console.log('ntest')
-//         console.log(this.SAFARIMERDA)
         //window.open(this.SAFARIMERDA,"_self");
-        window.open(icons[i][1],"_self");
+        window.open(icon[1],"_self");
          //dude.scale.x *= 1.25;
          //dude.scale.y *= 1.25;
     }
 
     app.stage.addChild(dude);
-}
+});
 
 // create a bounding box for the little dudes
 const dudeBoundsPadding = 1;

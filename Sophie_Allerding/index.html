@@ -64,23 +64,23 @@
     </div>
     <div class="flex-container">
         <div class="flex-left">
-            <img class="picsright" src="12.jpg" alt="01">
-            <img class="picsright" src="9.jpg" alt="02">
-            <img class="picsright" src="0.jpg" alt="03">
-            <img class="picsright" src="5.jpg" alt="04">
-            <img class="picsright" src="11.jpg" alt="05">
-            <img class="picsright" src="7.jpg" alt="06">
-            <img class="picsright" src="8.jpg" alt="07">
+            <img class="gallery" src="12.jpg" alt="01">
+            <img class="gallery" src="9.jpg" alt="02">
+            <img class="gallery" src="0.jpg" alt="03">
+            <img class="gallery" src="5.jpg" alt="04">
+            <img class="gallery" src="11.jpg" alt="05">
+            <img class="gallery" src="7.jpg" alt="06">
+            <img class="gallery" src="8.jpg" alt="07">
         </div>
 
         <div class="flex-right">
-            <img class="picsleft" src="14.jpg" alt="09">
-            <img class="picsleft" src="15.jpg" alt="10">
-            <img class="picsleft" src="3.jpg" alt="11">
-            <img class="picsleft" src="1.jpg" alt="12">
-            <img class="picsleft" src="10.jpg" alt="13">
-            <img class="picsleft" src="6.jpg" alt="14">
-            <img class="picsleft" src="2.jpg" alt="15">
+            <img class="gallery" src="14.jpg" alt="09">
+            <img class="gallery" src="15.jpg" alt="10">
+            <img class="gallery" src="3.jpg" alt="11">
+            <img class="gallery" src="1.jpg" alt="12">
+            <img class="gallery" src="10.jpg" alt="13">
+            <img class="gallery" src="6.jpg" alt="14">
+            <img class="gallery" src="2.jpg" alt="15">
         </div>    
         
     </div>
@@ -88,38 +88,36 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;"src="13.jpg" alt="16">
-    <div class="gallery">
 
-        
-    </div>
 
     <script>
 
-        var number;
+        //var number;
 
-        jQuery.each(jQuery('.picsright'),function(){
-            var number =  Math.floor(Math.random() * 30);
-            var number2 =  10+ Math.floor(Math.random() * 20);
-            var number3 =  70 + Math.floor(Math.random() * 30);
-            console.log(number3)
+        // jQuery.each(jQuery('.gallery'),function(){
+        //     var number =  Math.floor(Math.random() * 20);
+        //     var number2 =  10+ Math.floor(Math.random() * 15);
+        //     // var number3 =  70 + Math.floor(Math.random() * 20);
+        //     //console.log(number3)
             
-            jQuery(this).css('margin-left', number+'vw');
-            jQuery(this).css('margin-top', number2+'%');
-            jQuery(this).css('width', number3+'%');
-            // console.log(jQuery(this).css('margin-right', number+'vh'))
-          });
+        //     jQuery(this).css('margin-left', number+'vw');
+        //     jQuery(this).css('margin-top', number2+'%');
+        //     // jQuery(this).css('width', number3+'%');
+        //     // console.log(jQuery(this).css('margin-right', number+'vh'))
+        //   });
 
-          jQuery.each(jQuery('.picsleft'),function(){
-            var number =  Math.floor(Math.random() * 30);
-            var number2 =  9+ Math.floor(Math.random() * 20);
-            var number3 =  70 + Math.floor(Math.random() * 30);
-            console.log(number3)
+        //   jQuery.each(jQuery('.gallery'),function(){
+        //     var number =  Math.floor(Math.random() * 20);
+        //     var number2 =  9+ Math.floor(Math.random() * 15);
+        //    // var number3 =  70 + Math.floor(Math.random() * 30);
+        //     //console.log(number3)
             
-            jQuery(this).css('margin-right', number+'vw');
-            jQuery(this).css('margin-top', number2+'%');
-            jQuery(this).css('width', number3+'%');
-            // console.log(jQuery(this).css('margin-right', number+'vh'))
-          });
+
+        //     jQuery(this).css('margin-right', number+'vw');
+        //     jQuery(this).css('margin-top', number2+'%');
+        //     //jQuery(this).css('width', number3+'%');
+        //     // console.log(jQuery(this).css('margin-right', number+'vh'))
+        //   });
 
 
     </script>

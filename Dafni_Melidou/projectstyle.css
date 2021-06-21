@@ -112,6 +112,7 @@ a{text-decoration: none;}
 .gallery img{
     margin: 12px 12px;
     max-width: 30vw;
+    object-fit: contain;
 }
 @media only screen and (max-width: 600px) {
     .gallery{
@@ -119,5 +120,6 @@ a{text-decoration: none;}
     }
     .gallery img{
         max-width: 40vw;
+        object-fit: contain;
     }
 }

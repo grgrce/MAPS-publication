@@ -121,5 +121,6 @@ a{text-decoration: none;}
     .gallery img{
         max-width: 40vw;
         object-fit: contain;
+        margin: 12px;
     }
 }

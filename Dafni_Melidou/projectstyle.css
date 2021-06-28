@@ -102,6 +102,8 @@ a{text-decoration: none;}
     line-height: 1.3em;
 }
 .gallery{
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap; 
     display: flex;
     flex-flow: row wrap;
     max-width: 80vw;

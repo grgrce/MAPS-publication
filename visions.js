@@ -32,7 +32,7 @@ icons.forEach (function (icon) {
     // create some extra properties that will control movement :
     // create a random direction in radians. This is a number between 0 and PI*2 which is the equivalent of 0 - 360 degrees
     // dude.direction = Math.random() * Math.PI * 2;
-    dude.direction = Math.random() * Math.PI * 0.9;
+    dude.direction = Math.random() * Math.PI * 0.5;
     
     // this number will be used to modify the direction of the dude over time
     // dude.turningSpeed = Math.random() ;
